@@ -1,7 +1,7 @@
 
 /**
  *
- * @author Alvin Aryan
+ *
  */
 package PenjualanHp;
 import PenjualanHp.Data_penjualanhp;
