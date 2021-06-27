@@ -388,7 +388,7 @@ public class data_penjualanhp extends javax.swing.jframe {
         system.exit(0);
     }                                        
 
-    private void tbsimpanactionperformed(java.awt.event.actionevent evt) {                                         
+private void tbsimpanactionperformed(java.awt.event.actionevent evt) {                                         
         try{
             string sql = "insert into data_penjualanhp values ('"+txtkode.gettext()+"','"+txtmerek.gettext()+"','"+cbtype.getselecteditem()+"','"+txtharga.gettext()+"','"+txtjumlah.gettext()+"','"+txtketerangan.gettext()+"')";
             java.sql.connection conn = (connection)koneksi.configdb();
@@ -400,9 +400,8 @@ public class data_penjualanhp extends javax.swing.jframe {
         }catch(headlessexception | sqlexception e){
             joptionpane.showmessagedialog(this, e.getmessage());
         }
-    }                                        
-
-    /**
+    }                     
+     /**
      * @param args the command line arguments
      */
     public static void main(string args[]) {
